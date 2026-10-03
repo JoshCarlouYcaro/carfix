@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carfix & Autocheck - Digital Business Card</title>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Clean External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-body">
+
+    <div class="card-container">
+        <!-- Main Card Container -->
+        <div class="glass-card">
+            
+            <!-- Glow Effect Elements -->
+            <div class="glow-effect glow-top-left"></div>
+            <div class="glow-effect glow-bottom-right"></div>
+
+            <!-- Business Switcher Tabs -->
+            <div class="switcher-container">
+                <button id="btnCarfix" class="switch-btn active" onclick="switchBusiness('carfix')">Carfix</button>
+                <button id="btnAutocheck" class="switch-btn" onclick="switchBusiness('autocheck')">Autocheck</button>
+            </div>
+
+            <!-- ================= CARFIX SECTION ================= -->
+            <div id="sectionCarfix" class="business-section">
+                <h2 class="card-header-title">CAR FIX - CAR ACCIDENT RESTORATION DIVISION</h2>
+
+                <!-- Logo -->
+                <div class="image-wrapper">
+                    <div class="image-border">
+                        <img src="carfixlogo.png" alt="Carfix Logo" class="profile-img">
+                    </div>
+                </div>
+
+                <h1 class="profile-name">France H. Vidallo</h1>
+                <p class="profile-title">Owner / Founder</p>
+
+                <div class="links-section">
+                    <p class="section-label">Connect with us</p>
+                    
+                    <!-- Mobile Number -->
+                    <a href="tel:09175099158" class="contact-link">
+                        <div class="link-content">
+                            <div class="icon-box"><i class="fas fa-phone"></i></div>
+                            <div class="link-text-group">
+                                <span class="link-category">Carfix Number</span>
+                                <span class="link-username">0917 509 9158</span>
+                            </div>
+                        </div>
+                        <i class="fas fa-arrow-right link-arrow"></i>
+                    </a>
+
+                    <!-- Landline -->
+                    <a href="tel:0464049571" class="contact-link">
+                        <div class="link-content">
+                            <div class="icon-box"><i class="fas fa-phone-alt"></i></div>
+                            <div class="link-text-group">
+                                <span class="link-category">Landline Number</span>
+                                <span class="link-username">046 404 9571</span>
+                            </div>
+                        </div>
+                        <i class="fas fa-arrow-right link-arrow"></i>
+                    </a>
+
+                    <!-- FB Page (Palitan ang href ng mismong link ng Carfix FB page) -->
+                    <a href="https://www.facebook.com/profile.php?id=61593180144172" target="_blank" class="contact-link">
+                        <div class="link-content">
+                            <div class="icon-box"><i class="fab fa-facebook-f"></i></div>
+                            <div class="link-text-group">
+                                <span class="link-category">Facebook Page</span>
+                                <span class="link-username">Carfix</span>
+                            </div>
+                        </div>
+                        <i class="fas fa-arrow-right link-arrow"></i>
+                    </a>
+
+                    <!-- FB Owner -->
+                    <a href="https://www.facebook.com/fh.vidallo" target="_blank" class="contact-link">
+                        <div class="link-content">
+                            <div class="icon-box"><i class="fas fa-user-shield"></i></div>
+                            <div class="link-text-group">
+                                <span class="link-category">Owner Facebook</span>
+                                <span class="link-username">FH Vidalla</span>
+                            </div>
+                        </div>
+                        <i class="fas fa-arrow-right link-arrow"></i>
+                    </a>
+
+                    <!-- Email -->
+                    <a href="mailto:francehavagvidallo@gmail.com" class="contact-link email-btn" data-email="francehavagvidallo@gmail.com">
+                        <div class="link-content">
+                            <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                            <div class="link-text-group">
+                                <span class="link-category">Email Address</span>
+                                <span class="link-username">francehavagvidallo@gmail.com</span>
+                            </div>
+                        </div>
+                        <i class="fas fa-arrow-right link-arrow"></i>
+                    </a>
+                </div>
+
+                <!-- Save Contact Button -->
+                <button class="save-btn" onclick="saveContact('Carfix', '09175099158', 'francehavagvidallo@gmail.com', 'CAR FIX - CAR ACCIDENT RESTORATION DIVISION')">
+                    <i class="fas fa-user-plus btn-icon"></i>
+                    <span>Save Contact</span>
+                </button>
+
+                <p class="footer-note">Carfix - Restoring Cars. Rebuilding Trust.</p>
+            </div>
+
+
+            <!-- ================= AUTOCHECK SECTION ================= -->
+            <div id="sectionAutocheck" class="business-section" style="display: none;">
+                <h2 class="card-header-title">AUTOCHECK - SERVICES • PARTS • TIRES</h2>
+
+                <!-- Logo -->
+                <div class="image-wrapper">
+                    <div class="image-border">
+                        <img src="autologo.png" alt="Autocheck Logo" class="profile-img">
+                    </div>
+                </div>
+
+                <h1 class="profile-name">France H. Vidallo</h1>
+                <p class="profile-title">Owner / Founder</p>
+
+                <div class="links-section">
+                    <p class="section-label">Connect with us</p>
+                    
+                    <!-- Mobile Number (Palitan kung iba ang number ng Autocheck) -->
+                    <a href="tel:09175099158" class="contact-link">
+                        <div class="link-content">
+                            <div class="icon-box"><i class="fas fa-phone"></i></div>
+                            <div class="link-text-group">
+                                <span class="link-category">Autocheck Number</span>
+                                <span class="link-username">0917 509 9158</span>
+                            </div>
+                        </div>
+                        <i class="fas fa-arrow-right link-arrow"></i>
+                    </a>
+
+                    <!-- FB Page (Palitan ang href ng mismong link ng Autocheck FB page) -->
+                    <a href="https://www.facebook.com/autocheck2017" target="_blank" class="contact-link">
+                        <div class="link-content">
+                            <div class="icon-box"><i class="fab fa-facebook-f"></i></div>
+                            <div class="link-text-group">
+                                <span class="link-category">Facebook Page</span>
+                                <span class="link-username">Autocheck dasmarinas cavite</span>
+                            </div>
+                        </div>
+                        <i class="fas fa-arrow-right link-arrow"></i>
+                    </a>
+
+                    <!-- FB Owner -->
+                    <a href="https://www.facebook.com/fh.vidallo" target="_blank" class="contact-link">
+                        <div class="link-content">
+                            <div class="icon-box"><i class="fas fa-user-shield"></i></div>
+                            <div class="link-text-group">
+                                <span class="link-category">Owner Facebook</span>
+                                <span class="link-username">FH Vidalla</span>
+                            </div>
+                        </div>
+                        <i class="fas fa-arrow-right link-arrow"></i>
+                    </a>
+
+                    <!-- Email -->
+                    <a href="mailto:francehavagvidallo@gmail.com" class="contact-link email-btn" data-email="francehavagvidallo@gmail.com">
+                        <div class="link-content">
+                            <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                            <div class="link-text-group">
+                                <span class="link-category">Email Address</span>
+                                <span class="link-username">francehavagvidallo@gmail.com</span>
+                            </div>
+                        </div>
+                        <i class="fas fa-arrow-right link-arrow"></i>
+                    </a>
+                </div>
+
+                <!-- Save Contact Button -->
+                <button class="save-btn" onclick="saveContact('Autocheck', '09175099158', 'francehavagvidallo@gmail.com', 'AUTOCHECK - SERVICES PARTS TIRES')">
+                    <i class="fas fa-user-plus btn-icon"></i>
+                    <span>Save Contact</span>
+                </button>
+
+                <p class="footer-note">Autocheck - Services, Parts & Tires</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
